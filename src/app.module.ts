@@ -6,7 +6,7 @@ import {UsersModule} from "./modules/users.module";
 @Module({
 	imports: [
 		ConfigModule.forRoot({
-			envFilePath: '.env'
+			envFilePath: `.${process.env.NODE_ENV}.env`
 		}),
 		TypeOrmModule.forRootAsync({
 			useFactory: () => ({
