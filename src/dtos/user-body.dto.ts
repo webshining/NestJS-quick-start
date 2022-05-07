@@ -1,6 +1,6 @@
 export class UserBodyDto {
-	name: string;
-	username: string;
-	email: string;
-	password: string;
+	readonly name: string;
+	readonly username: string;
+	readonly email: string;
+	readonly password: string;
 }
